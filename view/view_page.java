@@ -19,7 +19,7 @@ public class view_page {
 		String yes = input.next();
 		String yes2 = yes.toLowerCase();
 		if(yes2.equals("yes")) {
-			registeration regobj = new registeration();
+			registration regobj = new registration();
 			regobj.register();
 		}
 		else {
