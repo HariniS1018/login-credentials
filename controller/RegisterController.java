@@ -7,9 +7,9 @@ public class RegisterController extends SuperFuncs {
 		System.out.println("Enter a valid password: ");
 		String pwd = input.next();
 		if(checkPattern(name,pwd) == true) {
-			String pwd2 = getMd5(pwd);
+			String securePwd = getMd5(pwd);
 			RegisterMod modobj = new RegisterMod();
-      			modobj.storeUser(name, pwd2);
+      			modobj.storeUser(name, securePwd);
 		}
 		else {
 			System.out.println("Your username or password is not in required format");
