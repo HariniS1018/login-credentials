@@ -1,19 +1,17 @@
-package package1;
+package com.loginpackage;
 import java.util.Scanner;
 
-public class registration extends view_page {
-	public static String pwd = "";
-	public static void register() {
+public class RegisterController extends Funcs {
+	public static void registerUser() {
 		Scanner input = new Scanner(System.in);
 		System.out.println("Enter your user name: ");
 		String name = input.next();
 		System.out.println("Enter a valid password: ");
-		pwd = input.next();
-		check checkobj = new check();
-		if(checkobj.checking(name,pwd) == true) {
+		String pwd = input.next();
+		if(checkPattern(name,pwd) == true) {
 			String pwd2 = getMd5(pwd);
-			model modobj = new model();
-      			modobj.store(name, pwd2);
+			RegisterMod modobj = new RegisterMod();
+      			modobj.storeUser(name, pwd2);
 		}
 		else {
 			System.out.println("Your username or password is not in required format");
