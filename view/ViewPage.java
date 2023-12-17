@@ -5,8 +5,8 @@ public class ViewPage extends SuperFuncs {
 	{
 		System.out.println("new user? Enter yes or no: ");
 		String yes = input.next();
-		String yes2 = yes.toLowerCase();
-		if(yes2.equals("yes")) {
+		String lowYes = yes.toLowerCase();
+		if(lowYes.equals("yes")) {
 			RegisterController regobj = new RegisterController();
 			regobj.registerUser();
 		}
