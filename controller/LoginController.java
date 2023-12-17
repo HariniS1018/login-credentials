@@ -6,13 +6,12 @@ public class LoginController extends SuperFuncs {
 		String user = input.next();
 		System.out.println("Enter your password: ");
 		String pwd = input.next();
-		String securePwd = getMd5(pwd);
+		String securedPwd = getMd5(pwd);
 		LoginMod modobj = new LoginMod();
-		if(modobj.retrieveUser(user,securePwd))
+		if(modobj.retrieveUser(user,securedPwd))
 			System.out.println("The entered username and password is valid");
 		else
 			System.out.println("The entered username and password is invalid");
-		}
 	}	
 }
 
