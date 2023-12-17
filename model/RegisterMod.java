@@ -1,6 +1,7 @@
 package com.loginpackage;
-public class RegistrationMod extends SuperClass {
-	public static void store(String name,String pwd) {
+
+public class RegisterMod extends SuperFuncs {
+	public static void storeUser(String name,String pwd) {
     		try {
 			PreparedStatement stmt = con.preparestatement("insert into security values(?,?");
 			stmt.setString(1, name);
@@ -10,5 +11,5 @@ public class RegistrationMod extends SuperClass {
     		catch(Exception e){
     			System.out.println(e);
     		}
-  }
+  	}
 }
