@@ -1,6 +1,4 @@
 package package1;
-
-import java.sql.PreparedStatement;
 import java.util.Scanner;
 
 public class registration extends view_page {
@@ -15,7 +13,7 @@ public class registration extends view_page {
 		if(checkobj.checking(name,pwd) == true) {
 			String pwd2 = getMd5(pwd);
 			model modobj = new model();
-      modobj.store(name, pwd2);
+      			modobj.store(name, pwd2);
 		}
 		else {
 			System.out.println("Your username or password is not in required format");
