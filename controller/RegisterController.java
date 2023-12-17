@@ -1,9 +1,7 @@
 package com.loginpackage;
-import java.util.Scanner;
 
-public class RegisterController extends Funcs {
+public class RegisterController extends SuperFuncs {
 	public static void registerUser() {
-		Scanner input = new Scanner(System.in);
 		System.out.println("Enter your user name: ");
 		String name = input.next();
 		System.out.println("Enter a valid password: ");
