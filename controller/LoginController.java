@@ -1,7 +1,7 @@
 package com.loginpackage;
 
-public class LoginPage extends SuperFuncs {
-	public static void log_in(){
+public class LoginController extends SuperFuncs {
+	public static void loginUser(){
 		System.out.println("Enter your registered username: ");
 		String user = input.next();
 		System.out.println("Enter your password: ");
