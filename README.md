@@ -1,7 +1,7 @@
 # login-credentials 
 
 ### Description:
-'Login credentials' is my personal mini project using Java language only. This personal project is a team project of two members and one among is me. I have developed model, controller and view of login and registration of user.
+'Login credentials' is a mini project developed using Java language only. This personal project is a team project of two members and one among is me. I have developed model, controller and view of login and registration of user.
 
 ### Project description:
 'Login credentials' needs each user to register themselves with valid user id and password. After successful registeration, they can login using the authorized user id and password. If the user give authorised input, then there displays a successful login message.
